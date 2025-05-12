@@ -2,22 +2,26 @@
   padding: 60px 40px;
   background-color: #fff;
   font-family: Arial, sans-serif;
+  margin-top: 50px;
+   min-height: 100vh;
+  
 }
 
-/* Title */
+
 .client-title {
-  color: #00afee;
-  font-size: 2rem;
+  color: #000;
+  font-size: 28px;
   text-align: center;
   margin-bottom: 15px;
+  font-weight: 400;
 }
 
 /* Description */
 .client-description {
-  color: #444;
-  font-size: 1rem;
+  color: #000;
+  font-size: 16px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 8%;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -25,16 +29,13 @@
 
 /* Logos grid */
 .client-logos {
-  width: 100vw; /* Stretch full width */
-  margin-left: calc(-40px); /* Cancel out horizontal padding from parent */
-  padding: 0 40px; /* Add back internal padding */
-  box-sizing: border-box;
-
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(5, 1fr); 
   gap: 30px;
-  align-items: center;
   justify-items: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* Logo image */

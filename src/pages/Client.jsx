@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Client.css";
 
-// Array of client logo paths (assuming they're in your assets folder)
+
 import logo1 from "../assets/logo1.png";
 import logo2 from "../assets/logo2.png";
 import logo3 from "../assets/logo3.png";
@@ -27,9 +27,9 @@ const logos = [
 function Client() {
   return (
     <div className="client-page">
-      <h2 className="client-title">Our Trusted Clients</h2>
+      <h2 className="client-title">Meet Our Clients</h2>
       <p className="client-description">
-        We’re proud to have worked with leading organizations across industries. Here are some of our amazing partners.
+        Since 2016 Fineteklabs has been helping technology startups and top brands create impactful software solutions.
       </p>
       <div className="client-logos">
         {logos.map((logo, index) => (
