@@ -1,16 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Importing Link from react-router-dom
+import { Link, useLocation } from "react-router-dom"; // Importing Link and useLocation
 import '../styles/Navbar.css';
 import logo from '../assets/logo.png';
 
 function Navbar() {
+  const location = useLocation(); // Get the current location (path)
+
+  // Check if the current page is either '/client' or '/company'
+  const isWhiteBackground = location.pathname === '/client' || location.pathname === '/company';
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isWhiteBackground ? 'white-background' : ''}`}>
       <div className="navbar_logo">
         <img src={logo} alt="fineteklabs-logo" />
       </div>
       <ul className="navbar_menu">
-        {/* Replace <a> tags with <Link> components */}
         <li><Link to="/services">Services</Link></li>
         <li><Link to="/technologies">Technologies</Link></li>
         <li><Link to="/industries">Industries</Link></li>

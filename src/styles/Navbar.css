@@ -1,53 +1,59 @@
 .navbar {
     display: flex;
-    justify-content: space-between; 
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 150px;
-    background-color: transparent;
+    background-color: transparent; /* Default transparent background */
     color: white;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0; 
+    right: 0;
     z-index: 1000;
-    margin: 0 auto; 
-    transition: background-color 0.3s ease, color 0.3s ease; 
-    
-  }
-  
-  .navbar_logo img {
-    height: 40px; 
+    margin: 0 auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.white-background {
+    background-color: white; /* White background on client and company pages */
+    color: black; /* Text color set to black */
+}
+
+.navbar_logo img {
+    height: 40px;
     object-fit: contain;
-  }
-  
-  .navbar_menu {
+}
+
+.navbar_menu {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
     list-style: none;
     margin: 0;
-    background-color:transparent ;
     padding: 0;
-  }
-  
-  .navbar_menu li a {
-    color: white;
+}
+
+.navbar_menu li a {
+    color: white; /* Default text color for transparent navbar */
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     text-transform: uppercase;
-    transition:color 0.3s ease;
-  }
-  
-  .navbar_menu li a:hover {
-    color: #00AFEE;
-  }
- 
-.navbar:hover {
-  background-color: white;  
-  color: black;  
+    transition: color 0.3s ease;
+}
+
+.navbar_menu li a:hover {
+    color: black; /* Keep the text color black when hovering */
+}
+
+/* White navbar: Text changes to black */
+.white-background .navbar_menu li a {
+    color: black; /* Text color for white navbar */
+}
+
+.white-background .navbar_menu li a:hover {
+    color: black; /* Keep it black on hover as well */
 }
 
 .navbar:hover .navbar_menu li a {
-  color: black;  
+    color: black; /* No hover effect */
 }
-  
