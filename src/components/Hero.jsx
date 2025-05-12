@@ -8,6 +8,8 @@ import img4 from "../assets/hero4.jpg";
 import img5 from "../assets/hero5.jpg";
 import img6 from "../assets/hero6.jpg";
 
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+
 const slides = [
   {
     image: img1,
@@ -77,6 +79,23 @@ function Hero() {
               <h2>{slide.title}</h2>
               <p>{slide.text}</p>
               <button>{slide.button}</button>
+            </div>
+
+            {/* Vertical Social Icons */}
+            <div className="social-icons">
+              <FaFacebookF />
+              <FaTwitter />
+              <FaLinkedinIn />
+            </div>
+
+            {/* Colored Boxes */}
+            <div className="color-boxes">
+              <div className="box dark-blue" />
+              <div className="box red" />
+              <div className="box yellow" />
+              <div className="box light-blue" />
+              <div className="box dark-blue" />
+              <div className="box red" />
             </div>
           </div>
         ))}

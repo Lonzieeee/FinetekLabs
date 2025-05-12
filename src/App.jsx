@@ -8,8 +8,9 @@ import Footer from "./components/Footer";
 // Home page sections
 import Hero from "./components/Hero";
 import ImageSlider from "./components/ImageSlider";
-import WhyChooseUs from "./components/WhyChooseUs";
 import WhyFinetek from "./components/WhyFinetek";
+import WhyChooseUs from "./components/WhyChooseUs";
+
 import SuccessStory from "./components/SuccessStory";
 import BlogCommunity from "./components/BlogCommunity";
 import ContactUs from "./components/ContactUs";
@@ -34,8 +35,9 @@ function MyApp() {
             <>
               <Hero />
               <ImageSlider />
+               <WhyFinetek />
               <WhyChooseUs />
-              <WhyFinetek />
+             
               <SuccessStory />
               <BlogCommunity />
               <ContactUs />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom"; // Importing Link and useLocation
+import { Link, useLocation } from "react-router-dom";
 import '../styles/Navbar.css';
 import logo from '../assets/logo.png';
 
@@ -12,7 +12,9 @@ function Navbar() {
   return (
     <nav className={`navbar ${isWhiteBackground ? 'white-background' : ''}`}>
       <div className="navbar_logo">
-        <img src={logo} alt="fineteklabs-logo" />
+        <Link to="/#hero">
+          <img src={logo} alt="fineteklabs-logo" />
+        </Link>
       </div>
       <ul className="navbar_menu">
         <li><Link to="/services">Services</Link></li>
