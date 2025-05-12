@@ -1,6 +1,7 @@
 import React from "react";
 import ceoPhoto from "../assets/ceo.jpg";
 import missionImage from "../assets/mission.png";
+import newSectionImage from "../assets/team.jpg"; 
 import "../styles/Company.css"; 
 
 function Company() {
@@ -54,7 +55,6 @@ function Company() {
       {/* New Content Section */}
       <section className="new-content-section">
         <h3 className="new-content-title">The Story So Far...</h3>
-        
       </section>
 
       {/* Timeline Section */}
@@ -105,6 +105,20 @@ function Company() {
           </div>
         </div>
       </section>
+
+      {/* Last Section */}
+      <section className="last-section">
+        <div className="last-section-left">
+          <h2 className="last-section-title">Our Culture</h2>
+          <p className="last-section-text">
+            As our motto states, we engineer success- Everyone at Fineteklabs engineers both personal and workplace success. Fineteklabs encourage and support everyone to be innovative and have a SMART goal in life, to positively impact society through their day-to-day activities.
+          </p>
+        </div>
+        <div className="last-section-right">
+          <img src={newSectionImage} alt="Future Vision" className="last-section-image" />
+        </div>
+      </section>
+
     </div>
   );
 }
