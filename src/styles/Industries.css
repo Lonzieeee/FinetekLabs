@@ -2,7 +2,7 @@
 .industries-page {
   font-family: Arial, sans-serif;
   background-color: #fff;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
 /* Hero Section */
@@ -39,24 +39,28 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.industries-header-content button:hover {
+  background-color: #0088cc;
 }
 
 /* Industries List Section */
 .industries-list {
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  padding: 60px 40px;
-  max-width: 100%; /* Ensure it takes the full width */
+  gap: 80px;
+  padding: 80px 40px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .industry-item {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .text-left {
@@ -67,58 +71,100 @@
   flex-direction: row-reverse;
 }
 
-.industry-text, .industry-images {
-  flex-grow: 1; /* Allow both text and images to take equal space */
-  flex: 1 1 45%; /* Ensure both take equal space */
-}
-
 .industry-text {
-  min-width: 280px;
+  flex: 1 1 40%;
+  min-width: 300px;
 }
 
 .industry-text h3 {
   font-size: 1.8rem;
   color: #262162;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .industry-text p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #444;
+  line-height: 1.6;
 }
 
 .industry-images {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1 1 50%;
+  min-width: 300px;
+  max-width: 600px;
 }
 
-.industry-images img {
-  width: 100%; /* Make image take up 100% of the container width */
-  height: auto;
+.main-img {
+  width: 100%;
+  height: 350px;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.industry-images .overlay-img {
+.overlay-img {
   position: absolute;
-  bottom: -20px;
-  right: -20px;
-  width: 100px;
+  width: 70%; /* Updated from 45% to 70% */
   height: auto;
+  max-width: 420px; /* Increased from 250px */
+  bottom: -30px; /* Increased from -25px */
+  right: -30px; /* Increased from -25px */
+  border: 4px solid white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  z-index: 2;
 }
 
-/* Media Queries for responsiveness */
+/* Alternate positioning for right-aligned items */
+.text-right .overlay-img {
+  right: auto;
+  left: -30px; /* Increased from -25px */
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
+  .industries-hero,
+  .industries-list {
+    padding: 40px 20px;
+  }
+
   .industry-item {
-    flex-direction: column; /* Stack text and images on smaller screens */
+    flex-direction: column;
+    gap: 30px;
   }
 
-  .industry-text, .industry-images {
-    flex: 1 1 100%; /* Make both sections take full width on smaller screens */
+  .industry-text,
+  .industry-images {
+    flex: 1 1 100%;
   }
 
-  .industry-images img {
-    width: 100%; /* Allow image to fill the container */
+  .main-img {
+    height: 280px;
+  }
+
+  .overlay-img {
+    width: 65%; /* Slightly reduced from 70% */
+    max-width: 320px; /* Reduced from 420px */
+    bottom: -20px; /* Adjusted from -30px */
+    right: -20px; /* Adjusted from -30px */
+  }
+
+  .text-right .overlay-img {
+    right: -20px;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-img {
+    height: 220px;
+  }
+
+  .overlay-img {
+    width: 60%; /* Further reduced for mobile */
+    max-width: 240px; /* Reduced from 320px */
+    bottom: -15px; /* Adjusted from -20px */
+    right: -15px; /* Adjusted from -20px */
   }
 }
