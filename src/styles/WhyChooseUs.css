@@ -1,0 +1,105 @@
+.why-choose-us {
+  position: relative;
+  padding: 80px 20px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #554990; /* fallback in case particles don't load */
+}
+
+.typing-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
+
+/* .typing-effect {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+} */
+ .typing-head {
+font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 48px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+ }
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  gap: 20px;
+  
+  max-width: 600px;
+}
+
+.categories h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.categories h3:hover,
+.category.active h3 {
+  color: #EA1C23;
+  text-decoration: underline;
+}
+
+.category-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.content-boxes {
+  display: grid;
+  gap: 4px; /* tighter spacing */
+  justify-content: center;
+}
+
+.content-boxes.services {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content-boxes.technologies {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content-boxes.industries {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content-box {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+  background-color: #00AFEE;
+}
+
+.content-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: 560;
+}
+
+.content-box p {
+  font-size: 14px;
+  color: #333;
+}

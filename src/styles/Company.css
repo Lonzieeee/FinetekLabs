@@ -1,0 +1,94 @@
+/* Company Page */
+.company-page {
+  background-color: #fff; /* White background for the entire page */
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* About Us Section */
+.about-us {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff; /* Set background to white */
+}
+
+.about-us-title {
+  color: #00afee;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-us-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.ceo-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.ceo-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: #F1F5F9; /* Background color for stats */
+  padding: 40px 0;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00afee;
+  margin-bottom: 10px;
+}
+
+.stat-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Mission Section */
+.mission-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.mission-text {
+  width: 50%;
+}
+
+.mission-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mission-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.mission-image {
+  width: 40%;
+  height: auto;
+}
