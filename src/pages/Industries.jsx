@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Industries.css"; 
 
-// Importing images
+
 import financeMain from "../assets/finance-main.jpg";
 import financeOverlay from "../assets/finance-overlay.jpg";
 import manufacturingMain from "../assets/manufacturing-main.jpg";
@@ -21,50 +21,50 @@ import startupsOverlay from "../assets/startups-overlay.jpg";
 
 const industriesData = [
   {
-    title: "Finance",
-    description: "Empowering digital transformation in the financial sector.",
+    title: "Professional Services & Finance",
+    description: "Digital Transformation Services for Professional Services and Financial Sectors. Our services including web design, development, and web marketing strategies will catapult your company ahead of your competitors and grow faster than ever before..",
     imgA: financeMain,
     imgB: financeOverlay,
   },
   {
-    title: "Manufacturing",
-    description: "Boosting productivity with smart manufacturing solutions.",
+    title: "Manufacturing Sector",
+    description: "Engineering, Construction & Manufacturing sectors requires digital solutions uniquely tailored to their specific needs. We understand how competitive and complex these industries are, and we make software to facilitate growth, efficiency and scalability organically.",
     imgA: manufacturingMain,
     imgB: manufacturingOverlay,
   },
   {
-    title: "Medical",
-    description: "Innovative technologies that support modern healthcare.",
+    title: "Medical & Healthcare ",
+    description: "With a deep understanding of medical and health landscape, we ensure you stay ahead of your competition with digital HMIS, EMR and telemedicine services that keep you ahead of the rest. A properly designed and developed website is also vital in order to reach the intended audience effectively and provide them with the information they need to make the right decision for their health.",
     imgA: medicalMain,
     imgB: medicalOverlay,
   },
   {
-    title: "Defense",
-    description: "Advanced solutions tailored for defense and security.",
+    title: "Defense &Security",
+    description: "The defense sector has gone a lot of automation and transformation to guarantee efficiency and security. We tailor make solutions based on artificial intelligence, machine learning among other modern technologies to boost situational awareness, combat preparedness & efficiency in the sector",
     imgA: defenseMain,
     imgB: defenseOverlay,
   },
   {
-    title: "Education",
-    description: "Digital learning environments built for the future.",
+    title: "Education & Nonprofits",
+    description: "Non-Profits and learning institutions require complex monitoring and evaluation tools as well as robust reporting options. We work with many educational institutions to reach new students and faculty, deliver academic content to learners and raise money through online donations, and promote meaningful causes.",
     imgA: educationMain,
     imgB: educationOverlay,
   },
   {
-    title: "Retail",
-    description: "E-commerce and in-store experiences redefined.",
+    title: "Retail & Ecommerce",
+    description: "Digital Marketing and Web Design and payment integration for Retail & eCommerce. Whether you own an e-commerce store or run a physical storefront, you need a steady now of new and returning customers. And today, the best way to reach them is by prominently being visible online, where they're already looking.",
     imgA: retailMain,
     imgB: retailOverlay,
   },
   {
-    title: "Tourism",
-    description: "Modern tools for travel, exploration, and connection.",
+    title: "Tourism & Hospitality ",
+    description: "The tourism and hospitality sector relies heavily on an effective web presence, probably more than any other. The reason for this is because nearly all of their customers go online first to research their travel options before booking anything. We can assist your organization in developing an effective digital strategy designed for growth.",
     imgA: tourismMain,
     imgB: tourismOverlay,
   },
   {
-    title: "Startups",
-    description: "Helping startups scale through innovative technology.",
+    title: "Startups and Innovators",
+    description: "As a startup or small business owner, building brand awareness, a long—term digital marketing strategy will have great importance right from the start. Whether you are in IT Consulting or a Startup that just raised money, there are many benefits to partner with us on an overall software development and web design service, including web development, SEO, brand identity, user experience, and content.",
     imgA: startupsMain,
     imgB: startupsOverlay,
   },
@@ -78,10 +78,9 @@ function Industries() {
           <div className="industries-header-content">
             <h2>Industries We Serve</h2>
             <p>
-              We specialize in delivering impactful technology across diverse
-              industries to fuel digital growth and innovation.
+              The most important milestone we have is experience in developing solutions for different industries. From Architectural Engineering &Construction, healthcare, defence, fintech to e-commerce. This has given us room to embed flexibility into the core of our engineering solutions.
             </p>
-            <button>Explore More</button>
+            <button>Request a quote</button>
           </div>
         </div>
       </section>
