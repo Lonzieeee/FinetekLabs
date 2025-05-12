@@ -1,0 +1,124 @@
+/* General Styling */
+.industries-page {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Hero Section */
+.industries-hero {
+  background-color: #262162;
+  color: #fff;
+  padding: 60px 40px;
+}
+
+.industries-hero-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.industries-header-content {
+  max-width: 600px;
+}
+
+.industries-header-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.industries-header-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.industries-header-content button {
+  padding: 10px 20px;
+  background-color: #00afee;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Industries List Section */
+.industries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px 40px;
+  max-width: 100%; /* Ensure it takes the full width */
+  margin: 0 auto;
+}
+
+.industry-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-left {
+  flex-direction: row;
+}
+
+.text-right {
+  flex-direction: row-reverse;
+}
+
+.industry-text, .industry-images {
+  flex-grow: 1; /* Allow both text and images to take equal space */
+  flex: 1 1 45%; /* Ensure both take equal space */
+}
+
+.industry-text {
+  min-width: 280px;
+}
+
+.industry-text h3 {
+  font-size: 1.8rem;
+  color: #262162;
+  margin-bottom: 10px;
+}
+
+.industry-text p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.industry-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.industry-images img {
+  width: 100%; /* Make image take up 100% of the container width */
+  height: auto;
+  object-fit: cover;
+}
+
+.industry-images .overlay-img {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 100px;
+  height: auto;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .industry-item {
+    flex-direction: column; /* Stack text and images on smaller screens */
+  }
+
+  .industry-text, .industry-images {
+    flex: 1 1 100%; /* Make both sections take full width on smaller screens */
+  }
+
+  .industry-images img {
+    width: 100%; /* Allow image to fill the container */
+  }
+}

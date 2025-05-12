@@ -1,0 +1,50 @@
+.client-page {
+  padding: 60px 40px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.client-title {
+  color: #00afee;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.client-description {
+  color: #444;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Logos grid */
+.client-logos {
+  width: 100vw; /* Stretch full width */
+  margin-left: calc(-40px); /* Cancel out horizontal padding from parent */
+  padding: 0 40px; /* Add back internal padding */
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Logo image */
+.client-logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: scale(1.1);
+}
