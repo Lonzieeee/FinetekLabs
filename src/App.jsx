@@ -34,9 +34,11 @@ function MyApp() {
           element={
             <>
               <Hero />
-              <ImageSlider />
-               <WhyFinetek />
+              <WhyFinetek />
               <WhyChooseUs />
+             
+              <ImageSlider />
+              
              
               <SuccessStory />
               <BlogCommunity />

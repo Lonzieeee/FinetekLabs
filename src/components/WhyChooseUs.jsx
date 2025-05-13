@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
+// import Particles from "react-tsparticles";
+// import { loadFull } from "tsparticles";
 import "../styles/WhyChooseUs.css";
 import { Typewriter } from "react-simple-typewriter";
 
 function WhyChoose() {
   const [activeCategory, setActiveCategory] = useState("SERVICES");
+
+  // Particle initialization
+  // const particlesInit = async (main) => {
+  //   await loadFull(main);
+  // };
 
   const services = [
     { title: "Software Development", description: "Create complex enterprise software, ensure reliable software integration, modernise your legacy system." },
@@ -45,17 +52,54 @@ function WhyChoose() {
 
   return (
     <section className="why-choose-us">
+      {/* Particles component */}
+      {/* <Particles 
+        id="tsparticles" 
+        init={particlesInit} 
+        options={{
+          background: {
+            color: {
+              value: "#554990", // purple background color
+            },
+          },
+          particles: {
+            number: {
+              value: 80, // Number of particles
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#ffffff", // Particle color
+            },
+            shape: {
+              type: "circle", // Shape of the particles
+            },
+            opacity: {
+              value: 0.5, // Transparency of particles
+            },
+            size: {
+              value: 3, // Particle size
+            },
+            move: {
+              enable: true,
+              speed: 2, // Speed of particle movement
+            },
+          },
+        }} 
+      /> */}
       <h1 className="typing-head">
-              <Typewriter
-                words={["Why choose Us..?"]}
-                loop={true}
-                cursor
-                cursorStyle="|"
-                typeSpeed={80}
-                deleteSpeed={0}
-                delaySpeed={2000}
-              />
-            </h1>
+        <Typewriter
+          words={["Why choose Us..?"]}
+          loop={true}
+          cursor
+          cursorStyle="|"
+          typeSpeed={80}
+          deleteSpeed={0}
+          delaySpeed={2000}
+        />
+      </h1>
 
       <div className="categories">
         {["SERVICES", "TECHNOLOGIES", "INDUSTRIES"].map((cat) => (

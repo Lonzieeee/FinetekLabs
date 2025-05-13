@@ -103,12 +103,12 @@
   right: 20px;
   z-index: 2;
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 
 .box {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 2px;
 }
 

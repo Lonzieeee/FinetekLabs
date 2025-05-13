@@ -12,7 +12,7 @@ import "swiper/css/controller";
 
 import "./slider.css";
 
-// Main images
+// Images
 import img1 from "../assets/image1.jpg";
 import img2 from "../assets/image2.jpg";
 import img3 from "../assets/image3.jpg";
@@ -59,7 +59,7 @@ const ImageSlider = () => {
     const index = swiper.realIndex;
     setActiveIndex(index);
 
-    if (thumbsSwiper && thumbsSwiper.slideTo) {
+    if (thumbsSwiper?.slideTo) {
       thumbsSwiper.slideTo(index);
     }
   };
@@ -79,48 +79,37 @@ const ImageSlider = () => {
         />
       </h1>
 
-      {/* Top section: image + text side by side */}
+      {/* Main Swiper with image + text together */}
       <div className="slider-top">
-        <div className="slider-left">
-          <Swiper
-            onSwiper={setMainSwiper}
-            style={{
-              "--swiper-navigation-color": "#000",
-              "--swiper-pagination-color": "#000",
-            }}
-            spaceBetween={10}
-            navigation={false}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            onSlideChange={handleSlideChange}
-            controller={{ control: thumbsSwiper }}
-            modules={[FreeMode, Navigation, Thumbs, Autoplay, Controller]}
-            className="mainSwiper"
-          >
-            {images.map((img, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  src={img}
-                  alt={`Slide ${index}`}
-                  className="main-slide"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-
-        <div className="slider-text">
-          <h2>{textContent[activeIndex].title}</h2>
-          <p>{textContent[activeIndex].description}</p>
-        </div>
+        <Swiper
+          onSwiper={setMainSwiper}
+          spaceBetween={10}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          onSlideChange={handleSlideChange}
+          modules={[FreeMode, Navigation, Thumbs, Autoplay, Controller]}
+          className="mainSwiper"
+        >
+          {images.map((img, index) => (
+            <SwiperSlide key={index}>
+              <div className="slide-content">
+                <img src={img} alt={`Slide ${index}`} className="main-slide" />
+                <div className="slider-text">
+                  <h2>{textContent[index].title}</h2>
+                  <p>{textContent[index].description}</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
+      {/* Thumbnails */}
       <div className="slider-thumbs">
         <Swiper
           onSwiper={setThumbsSwiper}
-          controller={{ control: mainSwiper }}
           spaceBetween={10}
           slidesPerView={4}
           freeMode={true}
