@@ -1,0 +1,78 @@
+/* === Section 1: Become Future Proof === */
+.future-proof-section {
+  background-color: #33c3f0;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #000;
+}
+
+.future-left {
+  max-width: 500px;
+}
+
+.future-left h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.future-left p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.red-accent {
+  color: red;
+  font-style: italic;
+}
+
+.start-button {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* === Section 2: Technologies Gradient Section === */
+.technologies-section {
+  background: linear-gradient(135deg, #00b4f1, #1e2c85);
+  color: white;
+  padding: 5rem 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.technologies-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.tech-text {
+  flex: 1;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  padding: 1rem;
+}
+
+.tech-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.tech-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
