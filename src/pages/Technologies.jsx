@@ -1,11 +1,12 @@
 import React from 'react';
 import '../styles/Technologies.css';
 import laptopImage from '../assets/laptop.png'; 
+import plane from '../assets/setPaceWhite.png'
 
 function Technologies() {
   return (
     <>
-      {/* Section 1: Become Future Proof */}
+      
       
 
       {/* Section 2: Technologies with gradient background */}
@@ -37,7 +38,7 @@ function Technologies() {
           <button className="start-button">Start now</button>
         </div>
         <div className="future-right">
-          {/* You can use absolutely positioned plane graphics here if needed */}
+          <img src={plane} alt="Laptop with technology icons" />
         </div>
       </section>
     </>

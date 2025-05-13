@@ -20,6 +20,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="navbar_menu">
+        {/* Services Dropdown */}
         <li className="dropdown">
           <Link to="/services">Services</Link>
           <div className="dropdown-content">
@@ -45,89 +46,86 @@ function Navbar() {
         </li>
 
         {/* Technologies Dropdown */}
-       <li className="dropdown">
-  <Link to="/technologies">Technologies</Link>
-  <div className="dropdown-content">
-    <div className="tech-section">
-      <div className="tech-image-container">
-        <img id="techImage" src={service1} alt="Technology" />
-      </div>
-      <div className="vertical-line"></div>
-      <div className="tech-text">
-        <h2>LABS</h2>
-        <p><Link to="/tech1" className="tech-link">Internet Of Things (IoT)</Link></p>
-        <p><Link to="/tech2" className="tech-link">Artificial Intelligence</Link></p>
-        <p><Link to="/tech3" className="tech-link">Arguemented Reality</Link></p>
-        <p><Link to="/tech4" className="tech-link">Cryptography</Link></p>
-      </div>
-    </div>
-  </div>
-</li>
-
-
+        <li className="dropdown">
+          <Link to="/technologies">Technologies</Link>
+          <div className="dropdown-content">
+            <div className="tech-section">
+              <div className="tech-image-container">
+                <img id="techImage" src={service1} alt="Technology" />
+              </div>
+              <div className="vertical-line"></div>
+              <div className="tech-text">
+                <h2>LABS</h2>
+                <p><Link to="/tech1" className="tech-link">Internet Of Things (IoT)</Link></p>
+                <p><Link to="/tech2" className="tech-link">Artificial Intelligence</Link></p>
+                <p><Link to="/tech3" className="tech-link">Augmented Reality</Link></p>
+                <p><Link to="/tech4" className="tech-link">Cryptography</Link></p>
+              </div>
+            </div>
+          </div>
+        </li>
 
         {/* Industries Dropdown */}
-         <li className="dropdown">
-  <Link to="/industries">INDUSTRIES</Link>
-  <div className="dropdown-content">
-    <div className="tech-section">
-      <div className="tech-image-container">
-        <img id="techImage" src={service2} alt="Technology" />
-      </div>
-      <div className="vertical-line"></div>
-      <div className="tech-text">
-        <h2>INDUSTRIES</h2>
-        <p><Link to="/tech1" className="tech-link">Agriculture</Link></p>
-        <p><Link to="/tech2" className="tech-link">Healthcare</Link></p>
-        <p><Link to="/tech3" className="tech-link">Human Resource</Link></p>
-        <p><Link to="/tech4" className="tech-link">Security</Link></p>
-        <p><Link to="/tech4" className="tech-link">Fin-Tech</Link></p>
-        <p><Link to="/tech4" className="tech-link">E-Commerce</Link></p>
-      </div>
-    </div>
-  </div>
-</li>
+        <li className="dropdown">
+          <Link to="/industries">INDUSTRIES</Link>
+          <div className="dropdown-content">
+            <div className="tech-section">
+              <div className="tech-image-container">
+                <img id="techImage" src={service2} alt="Technology" />
+              </div>
+              <div className="vertical-line"></div>
+              <div className="tech-text">
+                <h2>INDUSTRIES</h2>
+                <p><Link to="/tech1" className="tech-link">Agriculture</Link></p>
+                <p><Link to="/tech2" className="tech-link">Healthcare</Link></p>
+                <p><Link to="/tech3" className="tech-link">Human Resource</Link></p>
+                <p><Link to="/tech4" className="tech-link">Security</Link></p>
+                <p><Link to="/tech4" className="tech-link">Fin-Tech</Link></p>
+                <p><Link to="/tech4" className="tech-link">E-Commerce</Link></p>
+              </div>
+            </div>
+          </div>
+        </li>
 
         {/* Client Dropdown */}
-          <li className="dropdown">
-  <Link to="/client">CLIENTS</Link>
-  <div className="dropdown-content">
-    <div className="tech-section">
-      <div className="tech-image-container">
-        <img id="techImage" src={service3} alt="Technology" />
-      </div>
-      <div className="vertical-line"></div>
-      <div className="tech-text">
-        <h2>LABS</h2>
-        <p><Link to="/tech1" className="tech-link"></Link>Our Clients</p>
-        <p><Link to="/tech2" className="tech-link"></Link>Case Study</p>
-        
-      </div>
-    </div>
-  </div>
-</li>
+        <li className="dropdown">
+          <Link to="/client">CLIENTS</Link>
+          <div className="dropdown-content">
+            <div className="tech-section">
+              <div className="tech-image-container">
+                <img id="techImage" src={service3} alt="Technology" />
+              </div>
+              <div className="vertical-line"></div>
+              <div className="tech-text">
+                <h2>CLIENTS</h2>
+                <p><Link to="/tech1" className="tech-link">Our Clients</Link></p>
+                <p><Link to="/tech2" className="tech-link">Case Study</Link></p>
+              </div>
+            </div>
+          </div>
+        </li>
 
         {/* Company Dropdown */}
         <li className="dropdown">
-  <Link to="/company">COMPANY</Link>
-  <div className="dropdown-content">
-    <div className="tech-section">
-      <div className="tech-image-container">
-        <img id="techImage" src={service1} alt="Technology" />
-      </div>
-      <div className="vertical-line"></div>
-      <div className="tech-text">
-        <h2>COMPANY</h2>
-        <p><Link to="/company" className="tech-link">Agriculture</Link></p>
-        <p><Link to="/tech2" className="tech-link">Healthcare</Link></p>
-        <p><Link to="/tech3" className="tech-link">Human Resource</Link></p>
-        <p><Link to="/tech4" className="tech-link">Security</Link></p>
-        <p><Link to="/tech4" className="tech-link">Fin-Tech</Link></p>
-        <p><Link to="/tech4" className="tech-link">E-Commerce</Link></p>
-      </div>
-    </div>
-  </div>
-</li>
+          <Link to="/company">COMPANY</Link>
+          <div className="dropdown-content">
+            <div className="tech-section">
+              <div className="tech-image-container">
+                <img id="techImage" src={service1} alt="Technology" />
+              </div>
+              <div className="vertical-line"></div>
+              <div className="tech-text">
+                <h2>COMPANY</h2>
+                <p><Link to="/company" className="tech-link">Agriculture</Link></p>
+                <p><Link to="/tech2" className="tech-link">Healthcare</Link></p>
+                <p><Link to="/tech3" className="tech-link">Human Resource</Link></p>
+                <p><Link to="/tech4" className="tech-link">Security</Link></p>
+                <p><Link to="/tech4" className="tech-link">Fin-Tech</Link></p>
+                <p><Link to="/tech4" className="tech-link">E-Commerce</Link></p>
+              </div>
+            </div>
+          </div>
+        </li>
       </div>
     </nav>
   );

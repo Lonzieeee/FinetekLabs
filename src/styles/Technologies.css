@@ -11,11 +11,13 @@
 
 .future-left {
   max-width: 500px;
+  margin-left: 20%;
+  
 }
 
 .future-left h2 {
-  font-size: 2.8rem;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 450;
   margin-bottom: 1rem;
 }
 
@@ -31,7 +33,7 @@
 
 .start-button {
   margin-top: 2rem;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 4rem;
   font-size: 1rem;
   background: transparent;
   border: 2px solid white;
@@ -39,22 +41,44 @@
   border-radius: 4px;
   cursor: pointer;
 }
+.start-button:hover{
+    background-color: transparent;
+}
+.future-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px; 
+}
+
+.future-right img {
+  width: 100%;
+  max-width: 900px; 
+  height: auto;
+}
+
 
 /* === Section 2: Technologies Gradient Section === */
 .technologies-section {
   background: linear-gradient(135deg, #00b4f1, #1e2c85);
   color: white;
-  padding: 5rem 2rem;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+  position: relative;
+  margin-bottom: 40%;
 }
 
 .technologies-container {
   max-width: 1200px;
+  padding: 10%;
   margin: auto;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  /* position: relative; */
+  /* top:0rem; */
 }
 
 .tech-text {
@@ -68,11 +92,20 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  
+  position: relative;
+  z-index: 1;
 }
 
 .tech-image img {
   width: 100%;
-  max-width: 600px;
-  height: auto;
+  /* position: absolute; */
+  /* max-width: 600px; */
+  right: 0;
+  margin-top: -10px;
+
+ 
+  /* height: auto; */
+  z-index: 1000;
+
 }

@@ -84,6 +84,9 @@
   gap: 1px;
   /* justify-content: space-between; */
 }
+.dropdown-content.open {
+  display: block;
+}
 
 /* Style for each service section */
 .service-section {
