@@ -1,16 +1,29 @@
+.contact-outer-wrapper {
+  background-color: white;
+  border-radius: 16px;
+  padding: 5px;
+  max-width: 1000px;
+  margin: 60px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
 .contact-wrapper {
   display: flex;
-  justify-content: space-between;
-  margin: 40px auto;
+  /* justify-content: space-between; */
+  margin: 30px auto;
   max-width: 1100px;
+  /* align-items: stretch; */
 }
 
 .contact-info {
-  width: 45%;
-  background-color: #0066cc;
+  width: 40%;
+  background-color: #00AFEE;
   color: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 12px;
+    max-height: 400px;
 }
 
 .contact-info h2 {
@@ -24,7 +37,7 @@
 }
 
 .social-links {
-  margin-top: 20px;
+  margin-top: 40%;
 }
 
 .social-links a {
@@ -34,31 +47,55 @@
 }
 
 .contact-form-container {
-  width: 50%;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  background-color: #ffffff;
+  padding: 10px;
+  /* border-radius: 12px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  max-height: 900px;
 }
 
 .contact-form-container h2 {
   font-size: 24px;
-  margin-bottom: 20px;
+  
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 14px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
   font-size: 16px;
+
+  display: block;
+    color: #333; 
 }
 
-.contact-form textarea {
-  height: 120px;
+.input-line {
+  position: relative;
+}
+
+.input-line input,
+.input-line textarea {
+  /* width: 100%; */
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;  /* 
+  color: #333;  /* Set text color to dark grey for readability */
+}
+
+.input-line textarea {
+  /* height: 120px; */
   resize: none;
+}
+
+.input-line input:focus,
+.input-line textarea:focus {
+  border-bottom: 2px solid #0066cc;
+  background-color: #fff;  /* Set white background color on focus */
 }
 
 .contact-options {
@@ -74,6 +111,7 @@
 .privacy-policy {
   font-size: 14px;
   margin-bottom: 20px;
+  color: #000;
 }
 
 .privacy-policy a {
@@ -86,7 +124,7 @@ button {
   color: white;
   border: none;
   padding: 14px;
-  width: 100%;
+  width: fit-content;
   border-radius: 8px;
   font-size: 18px;
   cursor: pointer;
@@ -103,4 +141,17 @@ button:hover {
   color: green;
   font-weight: bold;
 }
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 10px;
+}
 
+.input-row .input-group {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
+}
