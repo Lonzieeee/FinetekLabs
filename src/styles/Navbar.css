@@ -5,7 +5,7 @@
   align-items: center;
   padding: 20px 150px;
   background-color: transparent; 
-  color: white;
+  /* color: white; */
   position: fixed;
   top: 0;
   left: 0;
@@ -25,6 +25,7 @@
 .navbar_logo img {
   height: 40px;
   object-fit: contain;
+
 }
 
 .navbar_menu {
@@ -67,13 +68,16 @@
   padding: 20px;
   width: 100vw;
   /* box-sizing: border-box; */
-  top: 60; 
+  top: 60px; 
   left: 0;
+  margin: 0;
   transition: all 0.3s ease; /* Smooth transition */
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-  z-index: 999;
+  z-index: 1000;
 }
-
+.navbar:hover{
+  background-color: white;
+}
 /* Show the dropdown content when hovering over the Services link */
 .navbar_menu .dropdown:hover .dropdown-content {
   display: flex;
@@ -107,22 +111,85 @@
 .service-section a {
   display: block;
   margin-top: 5px;
-  color: blue;
+  color: lightskyblue!important;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px !important;
 }
 
 /* When hovering on the navbar */
-.navbar:hover {
-  background-color: white; /* Change navbar background to white */
-  /* height: 200px;  */
-  /* padding: 20px 50px; */
-  padding-top: 30px;
-  padding-bottom: 200px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+.navbar_menu:hover {
+  background-color: white;
+  /* padding-bottom: 200px;
+  padding-top: 30px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
 .navbar:hover .navbar_menu li a {
   color: black; 
+}
+/* Container for the image, vertical line, and text */
+.tech-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+}
+
+/* Image styling */
+.tech-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-left: 0px;
+  
+  /* background-color: aqua; */
+}
+
+
+/* Vertical line styling */
+.vertical-line {
+  height: 68%;
+  width: 1px;
+  background-color: black;
+  margin-left: 8px;
+  margin-right: 0px;
+  padding: 0;
+}
+
+/* Text section */
+.tech-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Text Styling */
+.tech-text h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color:#333;
+}
+
+.tech-text p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.tech-link {
+  color: black;
+  font-weight: 400 !important;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.tech-link:hover {
+  color: blue !important;
+}
+
+/* Change the image when hovering on the links */
+.tech-link:hover ~ #techImage {
+  content: url('../assets/service2.png'); /* Put your new image URL here */
 }
