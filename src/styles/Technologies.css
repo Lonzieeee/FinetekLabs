@@ -1,4 +1,4 @@
-/* === Section 1: Become Future Proof === */
+
 .future-proof-section {
   background-color: #33c3f0;
   padding: 4rem 2rem;
@@ -59,14 +59,15 @@
 }
 
 
-/* === Section 2: Technologies Gradient Section === */
+
 .technologies-section {
   background: linear-gradient(135deg, #00b4f1, #1e2c85);
   color: white;
 
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
   position: relative;
-  margin-bottom: 40%;
+  margin-bottom: 5px;
+
 }
 
 .technologies-container {
@@ -77,6 +78,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  
   /* position: relative; */
   /* top:0rem; */
 }
@@ -108,4 +110,64 @@
   /* height: auto; */
   z-index: 1000;
 
+}
+.top-technologies{
+
+width: 100%;
+
+ 
+ /* display: flex; */
+ align-items: center;
+ padding:4rem 2rem;
+ flex-wrap: wrap;
+}
+.top-technologies h1{
+    color: black;
+    font-size: 28px;
+    font-weight:550 ;
+    text-align: center;
+    margin-bottom:15px;
+    margin-top:-30px;
+
+}
+.top{
+    max-width: 900px;
+    display: flex;
+    gap:30%;
+    margin-bottom: 5%;
+    margin-left:30% 
+    
+   
+}
+.four-sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap:20px; */
+    align-items: center;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    
+}
+.four-sections h2{
+    font-size:15px;
+    color: #000;
+    font-weight: 550;
+
+}
+.four-sections p{
+     font-size:16px;
+    color: #000;
+}
+.top-technologies img{
+    width: 100%;
+    max-width: 550px;
+}
+
+.internet, .artificial , .reality , .crypto{
+    width:100%;
+    /* background-color: black; */
+    max-width: 1000px;
 }
