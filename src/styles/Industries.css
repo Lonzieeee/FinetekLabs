@@ -52,9 +52,9 @@
 .industries-list {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap:100px;
   padding: 80px 40px;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -63,6 +63,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
+  
 }
 
 .text-left {
@@ -75,13 +76,13 @@
 
 .industry-text {
   flex: 1 1 40%;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .industry-text h3 {
   font-size: 20px;
   color: #000;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 15px;
 }
 
@@ -122,7 +123,7 @@
 /* Alternate positioning for right-aligned items */
 .text-right .overlay-img {
   right: auto;
-  left: -60px; /* Increased from -25px */
+  left: -60px; 
 }
 
 /* Responsive Design */
@@ -147,10 +148,10 @@
   }
 
   .overlay-img {
-    width: 65%; /* Slightly reduced from 70% */
-    max-width: 320px; /* Reduced from 420px */
-    bottom: -20px; /* Adjusted from -30px */
-    right: -20px; /* Adjusted from -30px */
+    width: 65%; 
+    max-width: 320px; 
+    bottom: -20px; 
+    right: -20px; 
   }
 
   .text-right .overlay-img {
@@ -165,9 +166,9 @@
   }
 
   .overlay-img {
-    width: 60%; /* Further reduced for mobile */
-    max-width: 240px; /* Reduced from 320px */
-    bottom: -15px; /* Adjusted from -20px */
-    right: -15px; /* Adjusted from -20px */
+    width: 60%; 
+    max-width: 240px; 
+    bottom: -15px;
+    right: -15px; 
   }
 }
