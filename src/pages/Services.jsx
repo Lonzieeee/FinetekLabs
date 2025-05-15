@@ -18,43 +18,43 @@ const Services = () => {
           </div>
         </div>
 
-        {/* SVG for cyclical wave effect */}
+        {/* SVG  wave effect */}
         <svg className="wave" viewBox="0 0 1440 320">
           <path
             fill="#f4f6f9"
             fillOpacity="1"
-            d="M0,128L48,117.3C96,107,192,85,288,85.3C384,85,480,107,576,112C672,117,768,107,864,117C960,128,1056,160,1152,170.7C1248,181,1344,160,1392,138.7L1440,117V320H0Z"
+            // d="M0,128L48,117.3C96,107,192,85,288,85.3C384,85,480,107,576,112C672,117,768,107,864,117C960,128,1056,160,1152,170.7C1248,181,1344,160,1392,138.7L1440,117V320H0Z"
           ></path>
         </svg>
       </div>
 
-      {/* "Our Services" section below the wave and gradient */}
+      {/* "Our Services"  */}
       <div className="our-services">
         <h2>Our Services</h2>
         <div className="services-grid">
           <div className="service-box">
-            <h3>Service 1</h3>
-            <p>Description for Service 1</p>
+            <h3>Software development and engineering</h3>
+            <p>Create complex enterprise software, ensure reliable software integration, modernize your legacy system.</p>
           </div>
           <div className="service-box">
-            <h3>Service 2</h3>
-            <p>Description for Service 2</p>
+            <h3>UX/UI Design</h3>
+            <p>Build the product you need on time with an experienced team that uses a clear and effective design process to deliver the desired user experience.</p>
           </div>
           <div className="service-box">
-            <h3>Service 3</h3>
-            <p>Description for Service 3</p>
+            <h3>Quality Assurance (QA) & Testing</h3>
+            <p>Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software.</p>
           </div>
           <div className="service-box">
-            <h3>Service 4</h3>
-            <p>Description for Service 4</p>
+            <h3>Security Audit</h3>
+            <p>We help you audit and secure your business custom applications from everyday security threats.</p>
           </div>
           <div className="service-box">
-            <h3>Service 5</h3>
-            <p>Description for Service 5</p>
+            <h3>Migrate to Artificial Intelligence</h3>
+            <p>Solve the most difficult challenges in your industry with artificial intelligence.</p>
           </div>
           <div className="service-box">
-            <h3>Service 6</h3>
-            <p>Description for Service 6</p>
+            <h3>ICT Consultation</h3>
+            <p>We help you implement innovative technology solutions for your business, to foster growth and competitiveness.</p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 .services-container {
   background: linear-gradient(to right, #89f0ff, #ffa18f);
-  padding: 80px 5% 150px; /* Extra padding at the bottom */
+  padding: 80px 5% 150px;
   position: relative;
   overflow: hidden;
 }
@@ -66,4 +66,48 @@
   width: 100%;
   height: auto;
   display: block;
+}
+.our-services h2{
+    color: black;
+    text-align: center;
+    margin-top:-30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.our-services{
+    background-color: #F1F5F9;
+    margin-bottom: 20%;
+    padding: 10%;
+    width: 100%;
+    height: auto;
+}
+.our-services h3{
+    color: black;
+    font-size: 18px;
+}
+.our-services p{
+    color: black;
+    
+}
+.service-box{
+     box-sizing: border-box;
+     padding: 10px;
+     max-width: 650px;
+     border: 2px solid #fff;
+     background-color: white;
+     border-radius: 20px;
+     padding: 40px 20px;
+  
+     
+     
+     
+}
+.services-grid{
+   display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap:10%;
+  margin-right: 15%;
+  margin-left: 15%;
+
+    
 }
