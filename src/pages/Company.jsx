@@ -15,7 +15,7 @@ function Company() {
         </p>
         <div className="ceo-container">
           <img src={ceoPhoto} alt="CEO" className="ceo-photo" />
-          <p className="ceo-name">Kombo Steve, founder</p>
+          <p className="ceo-name"><span className="KS">Kombo Steve,</span> founder</p>
         </div>
       </section>
 
@@ -44,10 +44,10 @@ function Company() {
         <div className="mission-text">
           <h3 className="mission-title">Let's engineer your business</h3>
           <p className="mission-description">
-            Here at Fine-tek-labs, we own our work and work as a team to ensure success of our customer projects. Our diverse teams work concurrently to guarantee timely delivery of various set milestones.
+            Here at <span>Fine-tek-labs</span> , we own our work and work as a team to ensure success of our customer projects. Our diverse teams work concurrently to guarantee timely delivery of various set milestones.</p>
 
-            Our engineers go through continuous and competitive innovation and skill advancement courses to guarantee better delivery of customer experiences and to ensure higher standard of disruptive products for our customers and their consumers.
-          </p>
+           <p className="mission-description2"> Our engineers go through continuous and competitive innovation and skill advancement courses to guarantee better delivery of customer experiences and to ensure higher standard of disruptive products for our customers and their consumers.</p>
+          
         </div>
         <img src={missionImage} alt="Mission" className="mission-image" />
       </section>
