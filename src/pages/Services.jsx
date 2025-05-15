@@ -23,10 +23,11 @@ const Services = () => {
           <path
             fill="#f4f6f9"
             fillOpacity="1"
-            // d="M0,128L48,117.3C96,107,192,85,288,85.3C384,85,480,107,576,112C672,117,768,107,864,117C960,128,1056,160,1152,170.7C1248,181,1344,160,1392,138.7L1440,117V320H0Z"
+             d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
           ></path>
         </svg>
       </div>
+
 
       {/* "Our Services"  */}
       <div className="our-services">
@@ -57,6 +58,22 @@ const Services = () => {
             <p>We help you implement innovative technology solutions for your business, to foster growth and competitiveness.</p>
           </div>
         </div>
+      </div>
+      <div class="pill-wrapper">
+   <div className="round">
+       <div class="mask-left"></div>
+    </div>
+  <div class="dot dot1"></div>
+  <div class="dot dot2"></div>
+  <div class="dot dot3"></div>
+  <div class="dot dot4"></div>
+  <div class="dot dot5"></div>
+  <div class="dot dot6"></div>
+   <div class="dot dot7"></div>
+
+
+    
+        
       </div>
     </>
   );

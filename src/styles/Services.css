@@ -1,6 +1,6 @@
 .services-container {
   background: linear-gradient(to right, #89f0ff, #ffa18f);
-  padding: 80px 5% 150px;
+  padding: 60px 5% 90px;
   position: relative;
   overflow: hidden;
 }
@@ -61,17 +61,19 @@
 /* Wave at bottom */
 .wave {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 30;
+  left:0;
+
   width: 100%;
-  height: auto;
+  
+  /* height: auto; */
   display: block;
 }
 .our-services h2{
     color: black;
     text-align: center;
     margin-top:-30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: 500;
 }
 .our-services{
@@ -111,3 +113,52 @@
 
     
 }
+.round{
+  display: inline-block;
+  padding:250px 500px;
+  background-color: transparent;
+
+  border-radius: 999px; 
+  font-family: sans-serif;
+  font-size: 14px;
+  border: 1px solid black;
+  
+  margin-left: 25%;
+  z-index: 1;
+}
+
+.pill-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 100px 10%; 
+  margin-top: -10%;
+}
+
+.mask-left{
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: white; 
+  pointer-events: none;
+}
+
+/* Style for the small blue dots */
+.dot {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #00afee;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+
+.dot1 { top: -40px; left: 40%; transform: translateX(-50%); }
+.dot2 { top: 0; left: 70%; transform: translateY(-50%); }
+.dot3 { bottom: -30px; left: 42%; transform: translateX(-50%); }
+.dot4 { top: 50%; right: -300px; transform: translateY(-50%); }
+.dot5 { top: -20px; left: 100%; }
+.dot6 { bottom: -20px; right:14%; transform: translateX(-50%);}
+.dot7 {bottom: -20px; right: -12%;}
