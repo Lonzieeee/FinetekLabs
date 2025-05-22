@@ -113,6 +113,30 @@
 
     
 }
+.Custom{
+  /* background-color: #00afee; */
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+ z-index: 1;
+ margin-top: -20%;
+}
+.Custom h1{
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.Custom p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  max-width: 800px;
+  /* text-align: center; */
+  margin-left: 30%;
+}
 .round{
   display: inline-block;
   padding:250px 500px;
@@ -130,8 +154,11 @@
 .pill-wrapper {
   position: relative;
   display: inline-block;
-  margin: 100px 10%; 
-  margin-top: -10%;
+  margin: 80px 10%; 
+  
+  /* margin-top: -10%; */
+  margin-top: 40px;
+  z-index: 0;
 }
 
 .mask-left{
@@ -143,6 +170,17 @@
   background-color: white; 
   pointer-events: none;
 }
+.dot-label{
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  z-index: 3;
+}
 
 /* Style for the small blue dots */
 .dot {
@@ -153,7 +191,32 @@
   border-radius: 50%;
   z-index: 2;
 }
-
+.tooltip{
+  visibility: hidden;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #000;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: normal;
+  word-wrap: break-word;
+  min-width: 250px;
+  width: auto;
+  opacity:0;
+  transition: opacity 0.3s ease;
+  z-index: 4;
+  /* text-align: center; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+ 
+}
+.dot:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}
 
 .dot1 { top: -40px; left: 40%; transform: translateX(-50%); }
 .dot2 { top: 0; left: 70%; transform: translateY(-50%); }
@@ -162,3 +225,79 @@
 .dot5 { top: -20px; left: 100%; }
 .dot6 { bottom: -20px; right:14%; transform: translateX(-50%);}
 .dot7 {bottom: -20px; right: -12%;}
+
+
+/* STICKY NOTES */
+.notes-stack {
+  position: relative;
+  width: 300px;
+  height: 220px;
+  margin: 100px auto;
+}
+
+.note {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  transition: transform 0.3s ease;
+}
+
+.note:active{
+  cursor: grabbing;
+}
+
+.note1 {
+  background-color: #00afee;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+
+.note2 {
+  background-color: #f6ed31; 
+  top: 6px;
+  left: 6px;
+  z-index: 2;
+  transform: rotate(-1deg);
+}
+
+.note3 {
+  background-color: #EA1C23;
+  top: 4px;
+  left: 4px;
+  z-index: 3;
+  transform: rotate(-2deg);
+}
+
+.note4 {
+  background-color: #262162;
+  top: 2px;
+  left: 2px;
+  z-index: 4;
+  transform: rotate(-3deg);
+}
+
+/* .note5 {
+  background-color: #00b4d8; 
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transform: rotate(0deg);
+} */
+
+
+ .note.dragging {
+  /* transform: translateY(20px) scale(1.02); */
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
+  z-index: -1;
+  opacity: 0.5;
+} 
