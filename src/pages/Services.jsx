@@ -104,7 +104,7 @@ const Services = () => {
 <div className='note note1'>We possess exceptional domain expertise and in-depth knowledge of niche technologies:from solution architecture to firefighting projects.</div>
 <div className='note note2'>We ensure our products are delivered in time</div>
 <div className='note note3'>We use the latest and most updated technology and development</div>
-<div className='note note4'>Goals and milestones can change,we as Finetek also adapt</div>
+<div className='note note4'>Goals and milestones can change,we as Finetek also adapt.</div>
 
 
 
